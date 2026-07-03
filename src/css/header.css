@@ -4,7 +4,9 @@
 
 .wrapper {
   display: flex;
-  gap: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav {
@@ -17,13 +19,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 161px;
+  height: 52px;
 }
+
 .nav-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
-  
 }
 .nav-link {
   position: relative;
