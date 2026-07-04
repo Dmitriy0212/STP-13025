@@ -1,5 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation, Keyboard, Grid } from 'swiper/modules';
+import 'raty-js/src/raty.css';
+import Raty from 'raty-js';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -51,14 +53,8 @@ export async function initReviewsSwiper() {
   }
 
   sliderWrapper.innerHTML = a(slidesData);
-  const images = document.querySelectorAll('.slider__image');
 
-  sliderWrapper.addEventListener('click', e => {
-    const btn = e.target.closest('.furnitures-item__btn');
-    if (!btn) return;
-    const id = btn.dataset.id;
-    productmodalRender(id);
-  });
+  initRatings(sliderWrapper);
 
   const swiper = new Swiper('.reviews-slider', {
     modules: [Navigation, Keyboard, Grid],
@@ -104,6 +100,25 @@ export async function initReviewsSwiper() {
   });
 }
 
+function initRatings(container) {
+  if (!container) return;
+
+  const ratings = container.querySelectorAll('.rating-rate');
+
+  ratings.forEach(el => {
+    const score = el.dataset.rating;
+
+    const raty = new Raty(el, {
+      score: score,
+      readOnly: true,
+      half: true,
+      starType: 'i',
+    });
+
+    raty.init();
+  });
+}
+
 function clickUpdateButtons(swiper) {
   const prevBtn = document.querySelector('.review-pagination-prev');
   const nextBtn = document.querySelector('.review-pagination-next');
@@ -129,7 +144,8 @@ function a(slidesData) {
     </div>
   </div>
   <div class="rating-rate" data-rating="${slide.rating}"></div>
-  <p class="review-text">${slide.publication}</p>
+
+  <p class="review-text">"${slide.publication}"</p>
  </div>
 </li>
 `;
