@@ -10,12 +10,12 @@
 }
 .reviews-slider {
   width: 330px;
-
   margin: 0 auto;
   padding: 20px 0;
   box-sizing: border-box;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
 }
 .reviews-swiper-wrapper {
   display: flex;
