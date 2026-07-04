@@ -85,4 +85,10 @@
   .faqs-item-text p {
     font-size: 24px;
   }
+  .faqs-content {
+    padding-top: 103px;
+    padding-bottom: 103px;
+    gap: 24px;
+    align-items: center;
+  }
 }
