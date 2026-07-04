@@ -34,7 +34,7 @@
   height: 56px;
   transition: opacity 0.2s;
 }
-.slider-arrows .icon {
+.slider-arrows use {
   transition: fill 0.2s;
 }
 .icon {
@@ -45,21 +45,21 @@
   fill: #fbbc04;
 }
 @media (hover: hover) {
-  .slider-arrows:hover .icon {
+  .slider-arrows:hover use {
     fill: #f96f1a;
   }
 }
 
-.slider-arrows:focus-visible .icon {
+.slider-arrows:focus-visible use {
   fill: #f96f1a;
 }
 
-.slider-arrows:active .icon {
+.slider-arrows:active use {
   fill: #f96f1a;
 }
 
 @media (hover: none) {
-  .slider-arrows:hover .icon {
+  .slider-arrows:hover use {
     fill: #fbbc04;
   }
 }
