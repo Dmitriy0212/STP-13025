@@ -68,6 +68,7 @@
   box-sizing: border-box;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
 }
 
 .swiper-slide:last-child {
