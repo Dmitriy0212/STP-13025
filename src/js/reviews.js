@@ -7,46 +7,40 @@ import 'swiper/css/grid';
 const base = import.meta.env.BASE_URL;
 const slidesData = [
   {
-    urldesc: `${base}img/webp/desc/card1.png`,
-    urldescx2: `${base}img/webp/desc/card1@x2.png`,
-    urlmob: `${base}img/webp/mobile/card1.png`,
-    urlmobx2: `${base}img/webp/mobile/card1@2x.png`,
-    desc: 'Floating collections of colorful 3D objects',
+    name: 'Sarah Mitchell',
+    publicationdate: 'March 12, 2026',
+    rating: 5,
+    publication: `Honestly one of the most satisfying puzzle games I've played. The 3D objects feel real, the animations when you match three are genuinely delightful.`,
   },
   {
-    urldesc: `${base}img/webp/desc/card2.png`,
-    urldescx2: `${base}img/webp/desc/card2@x2.png`,
-    urlmob: `${base}img/webp/mobile/card2.png`,
-    urlmobx2: `${base}img/webp/mobile/card2@2x.png`,
-    desc: 'Dynamic triple-match animations with glowing particles',
+    name: 'James Robertson',
+    publicationdate: 'April 3, 2025',
+    rating: 5,
+    publication: `The soft lighting and colours are so easy on the eyes. Great for winding down before bed.`,
   },
   {
-    urldesc: `${base}img/webp/desc/card3.png`,
-    urldescx2: `${base}img/webp/desc/card3@x2.png`,
-    urlmob: `${base}img/webp/mobile/card3.png`,
-    urlmobx2: `${base}img/webp/mobile/card3@2x.png`,
-    desc: 'Casual mobile UI with modern gradients',
+    name: 'Laura Chen',
+    publicationdate: 'January 19, 2024',
+    rating: 4,
+    publication: `Fun game but pieces are too small on older phones. Would love a size option.`,
   },
   {
-    urldesc: `${base}img/webp/desc/card4.png`,
-    urldescx2: `${base}img/webp/desc/card4@x2.png`,
-    urlmob: `${base}img/webp/mobile/card4.png`,
-    urlmobx2: `${base}img/webp/mobile/card4@2x.png`,
-    desc: 'Organized puzzle spaces before and after completion',
+    name: 'Daniel Petrov',
+    publicationdate: 'February 28, 2026',
+    rating: 5,
+    publication: `My kids and I play together every evening. The candy and toy themes keep them hooked, and I love how clean the UI is.`,
   },
   {
-    urldesc: `${base}img/webp/desc/card5.png`,
-    urldescx2: `${base}img/webp/desc/card5@x2.png`,
-    urlmob: `${base}img/webp/mobile/card5.png`,
-    urlmobx2: `${base}img/webp/mobile/card5@2x.png`,
-    desc: 'Bright toy, candy, and fruit object collections',
+    name: 'Amanda Wilson',
+    publicationdate: 'April 6, 2025',
+    rating: 4,
+    publication: `The glowing particle effects when you complete a level — absolutely stunning. Amazing game!`,
   },
   {
-    urldesc: `${base}img/webp/desc/card6.png`,
-    urldescx2: `${base}img/webp/desc/card6@x2.png`,
-    urlmob: `${base}img/webp/mobile/card6.png`,
-    urlmobx2: `${base}img/webp/mobile/card6@2x.png`,
-    desc: 'Relaxing puzzle environments with soft lighting',
+    name: `Michael O'Brien`,
+    publicationdate: 'March 1, 2024',
+    rating: 3,
+    publication: `Solid puzzle game. Would appreciate a social sharing feature — I want to show off my scores.`,
   },
 ];
 export async function initReviewsSwiper() {
@@ -70,7 +64,7 @@ export async function initReviewsSwiper() {
     modules: [Navigation, Keyboard, Grid],
 
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 24,
     slidesPerGroup: 1,
 
     grid: {
@@ -121,32 +115,24 @@ function a(slidesData) {
   return slidesData
     .map(slide => {
       return `
-<li class="slider__slide swiper-slide">
-  <div class="slider__img-wrapper gallery-img">
-    <picture>
-      <!-- mobile -->
-      <source
-        media="(max-width: 767px)"
-        srcset="${slide.urlmob} 1x, ${slide.urlmobx2} 2x"
-      />
-
-      <!-- desktop -->
-      <source
-        media="(min-width: 768px)"
-        srcset="${slide.urldesc} 1x, ${slide.urldescx2} 2x"
-      />
-
-      <img
-        class="slider__image"
-        src="${slide.urldesc}"
-        srcset="${slide.urldescx2} 2x"
-        alt="${(slide.desc || '').replace(/"/g, '').trim()}"
-      />
-    </picture>
+      <li class="swiper-slide">
+ <div class="review__slide" >
+  <div class="review-item">
+    <div class="review-icon">
+     <svg viewBox="0 0 32 32" width= "18"  height="18">
+              <use href="./img/sprite.svg#icon-bi_people-fill"></use>
+            </svg>
+    </div>
+    <div class="review-block">
+      <p class="review-text">${slide.name}</p>
+      <p class="review-text">${slide.publicationdate}</p>
+    </div>
   </div>
-
-  <p class="slider__desc">${slide.desc}</p>
-</li>`;
+  <div class="rating-rate" data-rating="${slide.rating}"></div>
+  <p class="review-text">${slide.publication}</p>
+ </div>
+</li>
+`;
     })
     .join('');
 }

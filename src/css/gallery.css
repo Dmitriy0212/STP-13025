@@ -139,7 +139,7 @@
   height: 315px;
 }
 
-.swiper-wrapper > li {
+.slider__slide {
   flex-shrink: 0;
   width: 100%;
   transition-property: transform;
