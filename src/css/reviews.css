@@ -1,0 +1,31 @@
+.reviews {
+  background: linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.reviews-content {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.reviews-slider {
+  width: 330px;
+
+  margin: 0 auto;
+  padding: 20px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+}
+.reviews-swiper-wrapper {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.reviews__image,
+.slider__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
