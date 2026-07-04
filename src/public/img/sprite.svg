@@ -35,14 +35,18 @@
     <symbol id="icon-Star-5" viewBox="0 0 34 32">
       <path fill="#959090" style="fill: var(--color11, #959090)" d="M16.387 0l4.882 10.512 11.506 1.394-8.489 7.891 2.229 11.373-10.128-5.635-10.128 5.635 2.229-11.373-8.489-7.891 11.506-1.394 4.882-10.512z"></path>
     </symbol>
-    <symbol id="icon-Vector" viewBox="0 0 32 32">
-      <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M16 1.6v28.8M30.4 16h-28.8"></path>
-    </symbol>
+
     <symbol id="icon-beck" viewBox="0 0 32 32">
       <path fill="#274c5a" style="fill: var(--color1, #274c5a)" d="M7.568 17.806l11.080 11.080-2.819 2.77-15.828-15.828 15.828-15.828 2.819 2.77-11.080 11.080h24.088v3.957h-24.088z"></path>
     </symbol>
     <symbol id="maill" viewBox="0 0 37 32">
       <path fill="#274c5a" style="fill: var(--color1, #274c5a)" d="M37.333 4c0-2.2-1.68-4-3.733-4h-29.867c-2.053 0-3.733 1.8-3.733 4v24c0 2.2 1.68 4 3.733 4h29.867c2.053 0 3.733-1.8 3.733-4v-24zM33.6 4l-14.933 10-14.933-10h29.867zM33.6 28h-29.867v-20l14.933 10 14.933-10v20z"></path>
+    </symbol>
+    <symbol id="iconLine" viewBox="0 0 32 32">
+      <path d="M1.6 16H30.4" stroke="#000000" stroke-width="2" stroke-linecap="round" fill="none"/>
+    </symbol>
+    <symbol id="iconVector" viewBox="0 0 32 32">
+      <path d="M16 1.6V30.4M1.6 16H30.4" stroke="#000000" stroke-width="4" stroke-linecap="round" fill="none"/>
     </symbol>
   </defs>
 </svg>
