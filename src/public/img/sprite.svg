@@ -45,6 +45,7 @@
     <symbol id="iconline" viewBox="0 0 32 32">
       <path d="M1.6 16H30.4" stroke="#000000" stroke-width="2" stroke-linecap="round" fill="none"/>
     </symbol>
+
     <symbol id="iconvector" viewBox="0 0 32 32">
       <path d="M16 1.6V30.4M1.6 16H30.4" stroke="#000000" stroke-width="4" stroke-linecap="round" fill="none"/>
     </symbol>
