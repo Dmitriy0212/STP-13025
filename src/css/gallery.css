@@ -34,30 +34,38 @@
   height: 56px;
   transition: opacity 0.2s;
 }
-
+.slider-arrows .icon {
+  transition: fill 0.2s;
+}
+.icon {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  stroke-width: 0;
+  fill: #fbbc04;
+}
 @media (hover: hover) {
-  .slider-arrows:hover {
-    opacity: 0.5;
+  .slider-arrows:hover .icon {
+    fill: #f96f1a;
   }
 }
 
-.slider-arrows:focus-visible {
-  opacity: 0.5;
+.slider-arrows:focus-visible .icon {
+  fill: #f96f1a;
 }
 
-.slider-arrows:active {
-  opacity: 0.5;
+.slider-arrows:active .icon {
+  fill: #f96f1a;
 }
 
 @media (hover: none) {
-  .slider-arrows:hover {
-    opacity: 1;
+  .slider-arrows:hover .icon {
+    fill: #fbbc04;
   }
 }
-
 .slider-arrows:disabled {
   pointer-events: none;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 .slider {
@@ -148,15 +156,6 @@
   flex-direction: column;
   justify-content: space-between;
   height: auto;
-}
-
-.icon {
-  display: inline-block;
-  width: 4em;
-  height: 4em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
 }
 
 @media only screen and (min-width: 1440px) {
