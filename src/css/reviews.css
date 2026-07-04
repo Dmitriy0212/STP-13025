@@ -1,7 +1,7 @@
 .reviews {
-  background: linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
+  background: url('/img/webp/desc/stars.svg') center/cover no-repeat,
+    linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
 }
 .reviews-content {
   flex-direction: column;
