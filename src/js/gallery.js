@@ -57,13 +57,6 @@ export async function initSwiper() {
   sliderWrapper.innerHTML = a(slidesData);
   const images = document.querySelectorAll('.slider__image');
 
-  sliderWrapper.addEventListener('click', e => {
-    const btn = e.target.closest('.furnitures-item__btn');
-    if (!btn) return;
-    const id = btn.dataset.id;
-    productmodalRender(id);
-  });
-
   const swiper = new Swiper('.slider', {
     navigation: {
       nextEl: '.gallery-pagination-next',
