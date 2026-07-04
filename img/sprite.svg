@@ -38,5 +38,8 @@
     <symbol id="icon-Vector" viewBox="0 0 32 32">
       <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M16 1.6v28.8M30.4 16h-28.8"></path>
     </symbol>
+    <symbol id="icon-beck" viewBox="0 0 32 32">
+      <path fill="#274c5a" style="fill: var(--color1, #274c5a)" d="M7.568 17.806l11.080 11.080-2.819 2.77-15.828-15.828 15.828-15.828 2.819 2.77-11.080 11.080h24.088v3.957h-24.088z"></path>
+    </symbol>
   </defs>
 </svg>
