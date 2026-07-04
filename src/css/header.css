@@ -19,8 +19,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 161px;
-  height: 52px;
+  width: 173px;
+  height: 56px;
 }
 
 .nav-list {
@@ -54,6 +54,10 @@
 }
 .nav-link.active::after {
   background: #747bff;
+}
+
+.btn-play:hover {
+  transform: scale(1.1); /* ефект при наведенні */
 }
 
 .burger-btn,
