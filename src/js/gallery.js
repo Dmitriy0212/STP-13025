@@ -2,48 +2,48 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/keyboard';
-
+const base = import.meta.env.BASE_URL;
 const slidesData = [
   {
-    urldesc: '/img/webp/desc/card1.png',
-    urldescx2: '/img/webp/desc/card1@x2.png',
-    urlmob: '/img/webp/mobile/card1.png',
-    urlmobx2: '/img/webp/mobile/card1@2x.png',
+    urldesc: `${base}img/webp/desc/card1.png`,
+    urldescx2: `${base}img/webp/desc/card1@x2.png`,
+    urlmob: `${base}img/webp/mobile/card1.png`,
+    urlmobx2: `${base}img/webp/mobile/card1@2x.png`,
     desc: 'Floating collections of colorful 3D objects',
   },
   {
-    urldesc: '/img/webp/desc/card2.png',
-    urldescx2: '/img/webp/desc/card2@x2.png',
-    urlmob: '/img/webp/mobile/card2.png',
-    urlmobx2: '/img/webp/mobile/card2@2x.png',
+    urldesc: `${base}img/webp/desc/card2.png`,
+    urldescx2: `${base}img/webp/desc/card2@x2.png`,
+    urlmob: `${base}img/webp/mobile/card2.png`,
+    urlmobx2: `${base}img/webp/mobile/card2@2x.png`,
     desc: 'Dynamic triple-match animations with glowing particles',
   },
   {
-    urldesc: '/img/webp/desc/card3.png',
-    urldescx2: '/img/webp/desc/card3@x2.png',
-    urlmob: '/img/webp/mobile/card3.png',
-    urlmobx2: '/img/webp/mobile/card3@2x.png',
+    urldesc: `${base}img/webp/desc/card3.png`,
+    urldescx2: `${base}img/webp/desc/card3@x2.png`,
+    urlmob: `${base}img/webp/mobile/card3.png`,
+    urlmobx2: `${base}img/webp/mobile/card3@2x.png`,
     desc: 'Casual mobile UI with modern gradients',
   },
   {
-    urldesc: '/img/webp/desc/card4.png',
-    urldescx2: '/img/webp/desc/card4@x2.png',
-    urlmob: '/img/webp/mobile/card4.png',
-    urlmobx2: '/img/webp/mobile/card4@2x.png',
+    urldesc: `${base}img/webp/desc/card4.png`,
+    urldescx2: `${base}img/webp/desc/card4@x2.png`,
+    urlmob: `${base}img/webp/mobile/card4.png`,
+    urlmobx2: `${base}img/webp/mobile/card4@2x.png`,
     desc: 'Organized puzzle spaces before and after completion',
   },
   {
-    urldesc: '/img/webp/desc/card5.png',
-    urldescx2: '/img/webp/desc/card5@x2.png',
-    urlmob: '/img/webp/mobile/card5.png',
-    urlmobx2: '/img/webp/mobile/card5@2x.png',
+    urldesc: `${base}img/webp/desc/card5.png`,
+    urldescx2: `${base}img/webp/desc/card5@x2.png`,
+    urlmob: `${base}img/webp/mobile/card5.png`,
+    urlmobx2: `${base}img/webp/mobile/card5@2x.png`,
     desc: 'Bright toy, candy, and fruit object collections',
   },
   {
-    urldesc: '/img/webp/desc/card6.png',
-    urldescx2: '/img/webp/desc/card6@x2.png',
-    urlmob: '/img/webp/mobile/card6.png',
-    urlmobx2: '/img/webp/mobile/card6@2x.png',
+    urldesc: `${base}img/webp/desc/card6.png`,
+    urldescx2: `${base}img/webp/desc/card6@x2.png`,
+    urlmob: `${base}img/webp/mobile/card6.png`,
+    urlmobx2: `${base}img/webp/mobile/card6@2x.png`,
     desc: 'Relaxing puzzle environments with soft lighting',
   },
 ];
