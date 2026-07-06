@@ -1,5 +1,8 @@
 .about-game {
   padding: 20px 0;
+  background:
+    url('/img/webp/desc/stars.svg') center/cover no-repeat,
+    linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
 }
 
 .about-game-title {
