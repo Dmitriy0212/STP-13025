@@ -1,0 +1,82 @@
+.how-to-play {
+  padding: 20px 0;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 411px));
+  gap: 32px 24px;
+  justify-content: center;
+  padding: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.card:nth-child(10) {
+  margin-left: 217.5px;
+  margin-right: 32px;
+}
+
+.card {
+  width: 411px;
+  height: 66px;
+  border-radius: 10px;
+  padding: 0 25px;
+
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+
+  transition: all 0.3s ease;
+}
+
+.card-1 {
+  border: 3px solid #2ca5ad;
+}
+
+.card-2 {
+  border: 3px solid #de86b0;
+}
+
+.card-3 {
+  border: 3px solid #cfb055;
+}
+
+.card-4 {
+  border: 3px solid #2ca5ad;
+}
+
+.card-5 {
+  border: 3px solid #6575e4;
+}
+
+.card-6 {
+  border: 3px solid #cfb055;
+}
+
+.card-7 {
+  border: 3px solid #de86b0;
+}
+
+.card-8 {
+  border: 3px solid #6575e4;
+}
+
+.card-9 {
+  border: 3px solid #d72933;
+}
+
+.card-10 {
+  border: 3px solid #d72933;
+}
+
+.card-11 {
+  border: 3px solid rgba(138, 56, 245, 0.86);
+}
