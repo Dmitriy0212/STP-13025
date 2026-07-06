@@ -49,5 +49,10 @@
     <symbol id="iconvector" viewBox="0 0 32 32">
       <path d="M16 1.6V30.4M1.6 16H30.4" stroke="#000000" stroke-width="4" stroke-linecap="round" fill="none"/>
     </symbol>
+    <symbol id="icon-group" viewBox="0 0 35 32">
+      <path fill="#5dc159" style="fill: var(--color1, #5dc159)" d="M17.455 1.455h5.333v11.636h6.667l-12 8.727zM17.455 1.455h-5.333v11.636h-6.667l12 8.727z"></path>
+      <path fill="none" stroke="#5dc159" style="stroke: var(--color1, #5dc159)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M17.455 1.455h5.333v11.636h6.667l-12 8.727-12-8.727h6.667v-11.636h5.333z"></path>
+      <path fill="none" stroke="#5dc159" style="stroke: var(--color1, #5dc159)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M1.455 30.545h32"></path>
+    </symbol>
   </defs>
 </svg>
