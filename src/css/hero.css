@@ -1,144 +1,60 @@
 .hero {
-  padding: 20px 0;
+  padding: 0px 16px;
 }
 
 .hero-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-}
-
-.decor-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.star {
-  position: absolute;
-}
-
-.star-7 {
-  left: 202px;
-  top: 11px;
-  width: 147.93px;
-  height: 131.72px;
-
-  transform: translate(-50%, -50%);
-}
-
-.star-8-1 {
-  left: 0px;
-  top: 506px;
-  width: 147.93px;
-  height: 131.72px;
-
-  transform: translate(-50%, -50%);
-}
-
-.star-8-2 {
-  left: 718.69px;
-  top: 511px;
-  width: 81.19px;
-  height: 88.91px;
-
-  transform: translate(-50%, -50%);
-}
-
-.star-9 {
-  left: 332px;
-  top: 530px;
-  width: 98.09px;
-  height: 87.34px;
-
-  transform: translate(-50%, -50%);
-}
-
-.star-10 {
-  left: 1144px;
-  top: 632px;
-  width: 193.75px;
-  height: 172.14px;
-
-  transform: translate(-50%, -50%);
-}
-
-.star-11 {
-  left: 1215px;
-  top: 0px;
-  width: 150.6px;
-  height: 139.45px;
-
-  transform: translate(-50%, -50%);
-}
-
-.star-12 {
-  left: 1039x;
-  top: 46px;
-  width: 81.19px;
-  height: 88.91px;
-
-  transform: translate(-50%, -50%);
-}
-
-.star-13 {
-  left: 549px;
-  top: 404px;
-  width: 52.62px;
-  height: 43.12px;
-
-  transform: translate(-50%, -50%);
-}
-
-.star-14 {
-  left: 633px;
-  top: 657px;
-  width: 54.14px;
-  height: 44.04px;
-
-  transform: translate(-50%, -50%);
-}
-
-.star-15 {
-  left: 121px;
-  top: 689px;
-  width: 98.09px;
-  height: 87.34px;
-
-  transform: translate(-50%, -50%);
-}
-
-.hero-content {
-  margin-left: 20px;
+  text-align: center;
 }
 
 .hero-image {
-  position: relative;
-  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  width: 100%;
+}
+
+.hero-character {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -30px;
 }
 
 .hero-title {
+  align-self: flex-start;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 12px;
+
   font-family: var(--third-family);
   font-weight: 400;
-  font-size: 75px;
-  line-height: 1.1;
+  font-size: 32px;
   color: #fff;
-  max-width: 815px;
-  margin-top: 144px;
-  margin-bottom: 16px;
-
-  white-space: nowrap;
+  line-height: 1.2;
 
   text-shadow: 0 9px 9px #4f228a;
 }
 
 .hero-description {
+  align-self: flex-start;
+  text-align: left;
+  width: 100%;
+
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 32px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.85);
 
   margin-bottom: 24px;
@@ -153,9 +69,11 @@
   white-space: nowrap;
 
   border-radius: 10px;
-  padding: 8px 16px;
-  width: 373px;
-  height: 75px;
+  padding: 8px;
+  width: 169px;
+  height: 50px;
+
+  margin-bottom: 24px;
 
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: #000;
@@ -164,62 +82,203 @@
 .btn-play-hero-text-light {
   font-family: var(--font-family);
   font-weight: 300;
-  font-size: 32px;
+  font-size: 14px;
   color: #fff;
 }
 
 .btn-play-hero-text-bold {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 32px;
+  font-size: 14px;
   color: #fff;
+}
+
+.play-icon {
+  width: 16px;
+  height: 19px;
 }
 
 .hero-stats {
   display: flex;
   flex-direction: row;
-  gap: 24px;
-  align-items: center;
+  gap: 16px;
+
+  margin-bottom: 50px;
 }
 
 .stat-item-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
   border: 2px solid #45075d;
   border-radius: 10px;
   padding: 8px 12px;
-  width: 159px;
-  height: 45px;
-  text-align: center;
+  width: 61px;
+  height: 31px;
 
-  box-shadow: 1px 10px 0 0 var(--header-color);
-  background: #fff;
+  box-shadow: 0 9px 3px #45075d;
+  background-color: #fff;
 }
 
 .stat-item-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
   border: 2px solid #45075d;
   border-radius: 10px;
   padding: 8px 12px;
-  width: 190px;
-  height: 45px;
+  width: 70px;
+  height: 32px;
 
-  box-shadow: 1px 10px 0 0 var(--header-color);
-  background: #fff;
+  box-shadow: 0 9px 3px #45075d;
+  background-color: #fff;
 }
 
 .stat-item-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
   border: 2px solid #45075d;
   border-radius: 10px;
   padding: 8px 12px;
-  width: 235px;
-  height: 45px;
+  width: 77px;
+  height: 31px;
 
-  box-shadow: 1px 10px 0 0 var(--header-color);
-  background: #fff;
+  box-shadow: 0 9px 3px #45075d;
+  background-color: #fff;
 }
 
 .stat-label {
+  display: none;
+}
+
+.stat-value {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 12px;
   color: #274c5a;
-  gap: 4px;
+}
+
+.stat-icon {
+  width: 16px;
+  height: 16px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    padding: 16px 80px;
+    background:
+      url('/img/webp/desc/stars.svg') center/cover no-repeat,
+      linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
+  }
+
+  .hero-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-image {
+    width: 50%;
+
+    order: 2;
+
+    margin-top: 0;
+  }
+
+  .hero-character {
+    max-width: 100%;
+  }
+
+  .hero-content {
+    width: 50%;
+    text-align: left;
+    align-items: flex-start;
+
+    order: 1;
+
+    padding-top: 144px;
+  }
+
+  .hero-title {
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 1.1;
+  }
+
+  .hero-description {
+    font-size: 32px;
+  }
+
+  .btn-play-hero {
+    padding: 8px 16px;
+    width: 373px;
+    height: 75px;
+
+    margin-bottom: 140px;
+  }
+
+  .btn-play-hero-text-light {
+    font-size: 32px;
+  }
+
+  .btn-play-hero-text-bold {
+    font-size: 32px;
+  }
+
+  .play-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-stats {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+
+    margin: 0 auto 40px 400px;
+  }
+
+  .stat-item-rating {
+    width: 159px;
+    height: 45px;
+  }
+
+  .stat-item-reviews {
+    width: 190px;
+    height: 45px;
+  }
+
+  .stat-item-download {
+    width: 235px;
+    height: 45px;
+  }
+
+  .stat-label {
+    display: flex;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: #274c5a;
+    gap: 4px;
+  }
+
+  .stat-value {
+    font-size: 24px;
+  }
+
+  .stat-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
