@@ -1,6 +1,8 @@
 .header {
   padding: 0px 16px;
   position: fixed;
+  background: linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
+  z-index: 10000;
 }
 
 .wrapper {
