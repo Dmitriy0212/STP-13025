@@ -1,20 +1,35 @@
 <section class="about-game" id="about-the-game">
   <div class="container about-game-container">
-    <div class="about-game-image">
-      <img src="/img/webp/desc/about.png" alt="About the game" />
-    </div>
-
-    <div class="about-game-content">
       <h2 class="about-game-title">About the game</h2>
+    <div class="about-game-content">
       <p class="about-game-text">
         A relaxing puzzle experience powered by colorful 3D matching Take the
-        matching games you already know and love, but now everything's in 3D and
-        way more cluttered - in a good way. The game focuses on smooth
-        progression, satisfying visual feedback, and casual mobile accessibility
-        while introducing increasingly creative puzzle layouts and object
-        themes.  We want it to look sleek, help you unwind, and give you that
-        little dopamine hit when you clear a level.
+        matching<br class="desktop-break"> games you already know<br class="desktop-break"> and love, but now every thing's in 3D and<br class="desktop-break">
+        way more cluttered - in a good way.<br class="desktop-break"><span class="mobile-only"></span>The game focuses on smooth progression,<br class="desktop-break"> satisfying visual feedback, and
+        casual<br class="desktop-break"> mobile accessibility while introducing<br class="desktop-break"> increasingly creative
+        puzzle layouts and<br class="desktop-break"> object themes.<br class="desktop-break">We want it to look sleek, help you
+        unwind,<br class="desktop-break"> and give you that little dopamine hit when<br class="desktop-break"> you clear a level.
       </p>
+
+      <div class="about-game-image">
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/webp/mobile/about.png    1x,
+            ./img/webp/mobile/about@x2.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/webp/desc/about.png 1x, ./img/webp/desc/about@x2.png 2x"
+        />
+        <img
+          class="about-the-game"
+          src="./img/webp/desc/about.png"
+          alt="About the game"
+        />
+      </picture>
+      </div>
     </div>
   </div>
 </section>
