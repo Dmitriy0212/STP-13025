@@ -8,14 +8,14 @@ export async function initHowToPlaySwiper() {
   const swiper = new Swiper('.how-to-play-swiper', {
     modules: [Navigation, Keyboard, Grid],
 
-    slidesPerView: 1,
+    /*  slidesPerView: 1,
     slidesPerGroup: 1,
-    spaceBetween: 32,
+    spaceBetween: 0,
     grid: {
-      rows: 2,
+      rows: 3,
       fill: 'row',
     },
-
+*/
     navigation: {
       prevEl: '.how-to-play-pagination-prev',
       nextEl: '.how-to-play-pagination-next',
@@ -23,16 +23,41 @@ export async function initHowToPlaySwiper() {
 
     keyboard: { enabled: true },
 
+    on: {
+      init() {
+        clickUpdateButtons(this);
+      },
+      slideChange() {
+        clickUpdateButtons(this);
+      },
+    },
+
     breakpoints: {
+      300: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 24,
+        grid: {
+          rows: 3,
+          fill: 'row',
+        },
+      },
+
       1440: {
         slidesPerView: 3,
         slidesPerGroup: 3,
         spaceBetween: 24,
-      },
-      grid: {
-        rows: 2,
-        fill: 'row',
+        grid: {
+          rows: 3,
+          fill: 'row',
+        },
       },
     },
   });
+}
+function clickUpdateButtons(swiper) {
+  const prevBtn = document.querySelector('.how-to-play-pagination-prev');
+  const nextBtn = document.querySelector('.how-to-play-pagination-next');
+  prevBtn.disabled = swiper.isBeginning;
+  nextBtn.disabled = swiper.isEnd;
 }
