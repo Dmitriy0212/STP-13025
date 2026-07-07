@@ -3,6 +3,7 @@
   position: fixed;
   background: linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
   z-index: 10000;
+  width: 100%;
 }
 
 .wrapper {
@@ -105,6 +106,7 @@
 @media only screen and (min-width: 1440px) {
   .header {
     padding: 16px 80px;
+    width: auto;
   }
 
   .nav-logo {
@@ -112,7 +114,7 @@
     height: 56px;
 
     margin-top: 12px;
-    margin-right: 149px;
+    /*margin-right: 149px;*/
   }
 
   .nav-list {
