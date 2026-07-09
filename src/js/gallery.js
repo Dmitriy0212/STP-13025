@@ -92,7 +92,7 @@ function a(slidesData) {
   return slidesData
     .map(slide => {
       return `
-<li class="slider__slide swiper-slide">
+<li class="slider-slide swiper-slide">
   <div class="slider__img-wrapper gallery-img">
     <picture>
       <!-- mobile -->

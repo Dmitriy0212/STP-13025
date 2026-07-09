@@ -130,8 +130,10 @@ function a(slidesData) {
   return slidesData
     .map(slide => {
       return `
-      <li class="swiper-slide">
- <div class="review__slide" >
+      <li class="swiper-slide review__slide">
+
+
+ </div>
   <div class="review-item">
     <div class="review-icon">
      <svg viewBox="0 0 32 32" width= "18"  height="18">
@@ -146,7 +148,6 @@ function a(slidesData) {
   <div data-rating-rate class="rating-rate" data-rating="${slide.rating}"></div>
 
   <p class="review-text">"${slide.publication}"</p>
- </div>
 </li>
 `;
     })

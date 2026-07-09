@@ -147,11 +147,12 @@
   height: 315px;
 }
 
-.slider__slide {
+.slider-slide {
   flex-shrink: 0;
   width: 100%;
-  transition-property: transform;
+  height: 100%;
   position: relative;
+  transition-property: transform;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
