@@ -3,6 +3,7 @@
   background: url('/img/webp/desc/stars.svg') center/cover no-repeat,
     linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
   scroll-margin-top: 100px;
+  background: url('/img/webp/desc/review.png') right center / 40% no-repeat;
 }
 .reviews-content {
   flex-direction: column;
@@ -94,6 +95,23 @@
   color: #fdc403;
 }
 
+@media (min-resolution: 2dppx) {
+  .reviews {
+    background-image: url('/img/webp/desc/review@x2.png');
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews {
+    background-image: url('/img/webp/mobile/review.png');
+  }
+}
+
+@media (max-width: 767px) and (min-resolution: 2dppx) {
+  .reviews {
+    background-image: url('/img/webp/mobile/review@x2.png');
+  }
+}
 @media only screen and (min-width: 1440px) {
   .reviews-title {
     font-size: 64px;
