@@ -173,8 +173,7 @@
 @media only screen and (min-width: 1440px) {
   .hero {
     padding: 16px 80px;
-    background:
-      url('/img/webp/desc/stars.svg') center/cover no-repeat,
+    background: url('/img/webp/desc/stars.svg') center/cover no-repeat,
       linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
   }
 
@@ -182,11 +181,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background: url('/img/webp/desc/hero.webp') right center / 60% no-repeat;
   }
 
   .hero-image {
     width: 50%;
-
+    display: none;
     order: 2;
 
     margin-top: 0;
@@ -197,7 +197,7 @@
   }
 
   .hero-content {
-    width: 50%;
+    width: 61%;
     text-align: left;
     align-items: flex-start;
 

@@ -69,7 +69,7 @@
   }
 
   .about-game-container {
-    align-items: left;
+    align-items: flex-start;
     text-align: left;
   }
 
