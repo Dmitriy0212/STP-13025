@@ -110,12 +110,13 @@
   }
 
   .how-to-play-container {
+    align-items: flex-start;
     gap: 32px;
   }
 
   .how-to-play-title {
+    text-align: left;
     font-size: 64px;
-    margin-right: 1090px;
   }
 
   .card {

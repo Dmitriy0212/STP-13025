@@ -168,6 +168,7 @@
     align-items: flex-start;
   }
   .gallery-title {
+    text-align: left;
     font-size: 64px;
     margin-bottom: 24px;
   }
