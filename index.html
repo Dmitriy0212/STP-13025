@@ -13,7 +13,7 @@
     <script type="module" crossorigin src="/STP-13025/index.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-13025/assets/vendor-BXmUUni6.js">
     <link rel="stylesheet" crossorigin href="/STP-13025/assets/vendor-jLGR6M_i.css">
-    <link rel="stylesheet" crossorigin href="/STP-13025/assets/styles-D40warQK.css">
+    <link rel="stylesheet" crossorigin href="/STP-13025/assets/styles-DmShhpi0.css">
   </head>
   <body>
     <header class="header">
@@ -75,23 +75,19 @@
           <a class="burger-menu-link" href="/index.html">Home</a>
         </li>
         <li class="burger-menu-item">
-          <a class="burger-menu-link" href="/index.html#about"
-            >About the Game</a
-          >
+          <a class="burger-menu-link" href="#about">About the Game</a>
         </li>
         <li class="burger-menu-item">
-          <a class="burger-menu-link" href="/index.html#how-to-play"
-            >How to Play</a
-          >
+          <a class="burger-menu-link" href="#how-to-play">How to Play</a>
         </li>
         <li class="burger-menu-item">
-          <a class="burger-menu-link" href="/index.html#gallery">Gallery</a>
+          <a class="burger-menu-link" href="#gallery">Gallery</a>
         </li>
         <li class="burger-menu-item">
-          <a class="burger-menu-link" href="/index.html#review">Review</a>
+          <a class="burger-menu-link" href="#review">Review</a>
         </li>
         <li class="burger-menu-item">
-          <a class="burger-menu-link" href="/index.html#faq">FAQ</a>
+          <a class="burger-menu-link" href="#faq">FAQ</a>
         </li>
       </ul>
     </div>
@@ -210,8 +206,8 @@
   <div class="container how-to-play-container">
     <h2 class="how-to-play-title">How to play</h2>
 
-    <div class="slider swiper how-to-play-swiper">
-      <ul class="swiper-wrapper cards-grid">
+    <div data-swiper-how-to-play class="slider swiper how-to-play-swiper">
+      <ul data-how-to-play-wrapper class="swiper-wrapper cards-grid">
         <li class="card card-1 swiper-slide">
           Match identical objects and clear<br />
           every board
@@ -250,12 +246,18 @@
     <div class="slider-nav-pag">
       <div class="swiper-pagination">
         <div class="swiper-pagination-arrows">
-          <button class="slider-arrows how-to-play-pagination-prev">
+          <button
+            data-how-to-play-pagination-prev
+            class="slider-arrows how-to-play-pagination-prev"
+          >
             <svg class="icon" viewBox="0 0 32 32">
               <use href="/STP-13025/img/sprite.svg#icon-Polygon-5"></use>
             </svg>
           </button>
-          <button class="slider-arrows how-to-play-pagination-next">
+          <button
+            data-how-to-play-pagination-next
+            class="slider-arrows how-to-play-pagination-next"
+          >
             <svg class="icon" viewBox="0 0 32 32">
               <use href="/STP-13025/img/sprite.svg#icon-Polygon-4"></use>
             </svg>
@@ -271,18 +273,28 @@
   <div class="container gallery-content">
     <h2 class="gallery-title">Gallery</h2>
 
-    <div class="slider swiper">
-      <ul class="slider__wrapper swiper-wrapper" id="slider__wrapper"></ul>
+    <div data-swiper class="slider swiper">
+      <ul
+        data-gallery-swiper-wrapper
+        class="slider__wrapper swiper-wrapper"
+        id="slider__wrapper"
+      ></ul>
 
-      <div class="slider-nav-pag">
+      <div class="gallery-nav-pag">
         <div class="swiper-pagination-arrows">
-          <button class="slider-arrows gallery-pagination-prev">
+          <button
+            data-gallery-swiper-prev
+            class="slider-arrows gallery-pagination-prev"
+          >
             <svg class="icon" viewBox="0 0 32 32">
               <use href="/STP-13025/img/sprite.svg#icon-Polygon-5"></use>
             </svg>
           </button>
 
-          <button class="slider-arrows gallery-pagination-next">
+          <button
+            data-gallery-swiper-next
+            class="slider-arrows gallery-pagination-next"
+          >
             <svg class="icon" viewBox="0 0 32 32">
               <use href="/STP-13025/img/sprite.svg#icon-Polygon-4"></use>
             </svg>
@@ -320,22 +332,29 @@
       </div>
 
       <div>
-        <div class="reviews-slider swiper">
+        <div data-reviews class="reviews-slider swiper">
           <ul
+            data-reviews-swiper
             class="swiper-wrapper reviews-swiper-wrapper"
             id="reviews__wrapper"
           ></ul>
 
-          <div class="slider-nav-pag">
+          <div class="reviews-nav-pag">
             <div class="swiper-pagination"></div>
             <div class="swiper-pagination-arrows">
-              <button class="slider-arrows review-pagination-prev">
+              <button
+                data-review-pagination-prev
+                class="slider-arrows review-pagination-prev"
+              >
                 <svg class="icon" viewBox="0 0 32 32">
                   <use href="/STP-13025/img/sprite.svg#icon-Polygon-5"></use>
                 </svg>
               </button>
 
-              <button class="slider-arrows review-pagination-next">
+              <button
+                data-review-pagination-next
+                class="slider-arrows review-pagination-next"
+              >
                 <svg class="icon" viewBox="0 0 32 32">
                   <use href="/STP-13025/img/sprite.svg#icon-Polygon-4"></use>
                 </svg>
