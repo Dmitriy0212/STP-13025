@@ -15,7 +15,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
   display: flex;
@@ -25,7 +27,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
   color: #080c09;
   font-weight: 700;
 
