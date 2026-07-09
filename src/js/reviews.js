@@ -46,7 +46,7 @@ const slidesData = [
   },
 ];
 export async function initReviewsSwiper() {
-  const sliderWrapper = document.querySelector('#reviews__wrapper');
+  const sliderWrapper = document.querySelector('[data-reviews-swiper]');
   if (!sliderWrapper) {
     console.error('sliderWrapper не знайдено!');
     return;
@@ -56,7 +56,7 @@ export async function initReviewsSwiper() {
 
   initRatings(sliderWrapper);
 
-  const swiper = new Swiper('.reviews-slider', {
+  const swiper = new Swiper('[data-reviews]', {
     modules: [Navigation, Keyboard, Grid],
 
     slidesPerView: 1,
@@ -69,8 +69,8 @@ export async function initReviewsSwiper() {
     },
 
     navigation: {
-      nextEl: '.review-pagination-next',
-      prevEl: '.review-pagination-prev',
+      nextEl: '[data-review-pagination-next]',
+      prevEl: '[data-review-pagination-prev]',
     },
 
     keyboard: {
@@ -103,7 +103,7 @@ export async function initReviewsSwiper() {
 function initRatings(container) {
   if (!container) return;
 
-  const ratings = container.querySelectorAll('.rating-rate');
+  const ratings = container.querySelectorAll('[data-rating-rate]');
 
   ratings.forEach(el => {
     const score = el.dataset.rating;
@@ -120,8 +120,8 @@ function initRatings(container) {
 }
 
 function clickUpdateButtons(swiper) {
-  const prevBtn = document.querySelector('.review-pagination-prev');
-  const nextBtn = document.querySelector('.review-pagination-next');
+  const prevBtn = document.querySelector('[data-review-pagination-prev]');
+  const nextBtn = document.querySelector('[data-review-pagination-next]');
   prevBtn.disabled = swiper.isBeginning;
   nextBtn.disabled = swiper.isEnd;
 }
@@ -143,7 +143,7 @@ function a(slidesData) {
       <p class="review-text">${slide.publicationdate}</p>
     </div>
   </div>
-  <div class="rating-rate" data-rating="${slide.rating}"></div>
+  <div data-rating-rate class="rating-rate" data-rating="${slide.rating}"></div>
 
   <p class="review-text">"${slide.publication}"</p>
  </div>

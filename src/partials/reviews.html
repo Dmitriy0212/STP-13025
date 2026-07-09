@@ -30,22 +30,29 @@
       </div>
 
       <div>
-        <div class="reviews-slider swiper">
+        <div data-reviews class="reviews-slider swiper">
           <ul
+            data-reviews-swiper
             class="swiper-wrapper reviews-swiper-wrapper"
             id="reviews__wrapper"
           ></ul>
 
-          <div class="slider-nav-pag">
+          <div class="reviews-nav-pag">
             <div class="swiper-pagination"></div>
             <div class="swiper-pagination-arrows">
-              <button class="slider-arrows review-pagination-prev">
+              <button
+                data-review-pagination-prev
+                class="slider-arrows review-pagination-prev"
+              >
                 <svg class="icon" viewBox="0 0 32 32">
                   <use href="/img/sprite.svg#icon-Polygon-5"></use>
                 </svg>
               </button>
 
-              <button class="slider-arrows review-pagination-next">
+              <button
+                data-review-pagination-next
+                class="slider-arrows review-pagination-next"
+              >
                 <svg class="icon" viewBox="0 0 32 32">
                   <use href="/img/sprite.svg#icon-Polygon-4"></use>
                 </svg>

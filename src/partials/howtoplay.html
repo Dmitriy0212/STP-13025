@@ -2,8 +2,8 @@
   <div class="container how-to-play-container">
     <h2 class="how-to-play-title">How to play</h2>
 
-    <div class="slider swiper how-to-play-swiper">
-      <ul class="swiper-wrapper cards-grid">
+    <div data-swiper-how-to-play class="slider swiper how-to-play-swiper">
+      <ul data-how-to-play-wrapper class="swiper-wrapper cards-grid">
         <li class="card card-1 swiper-slide">
           Match identical objects and clear<br />
           every board
@@ -42,12 +42,18 @@
     <div class="slider-nav-pag">
       <div class="swiper-pagination">
         <div class="swiper-pagination-arrows">
-          <button class="slider-arrows how-to-play-pagination-prev">
+          <button
+            data-how-to-play-pagination-prev
+            class="slider-arrows how-to-play-pagination-prev"
+          >
             <svg class="icon" viewBox="0 0 32 32">
               <use href="/img/sprite.svg#icon-Polygon-5"></use>
             </svg>
           </button>
-          <button class="slider-arrows how-to-play-pagination-next">
+          <button
+            data-how-to-play-pagination-next
+            class="slider-arrows how-to-play-pagination-next"
+          >
             <svg class="icon" viewBox="0 0 32 32">
               <use href="/img/sprite.svg#icon-Polygon-4"></use>
             </svg>

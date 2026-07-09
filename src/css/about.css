@@ -1,6 +1,7 @@
 .about-game {
   padding: 0px 16px;
   background: linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
+  scroll-margin-top: 100px;
 }
 
 .about-game-container {
@@ -63,8 +64,7 @@
 @media only screen and (min-width: 1440px) {
   .about-game {
     padding: 0 20px;
-    background:
-      url('/img/webp/desc/image 2.svg') center/cover no-repeat,
+    background: url('/img/webp/desc/image 2.svg') center/cover no-repeat,
       linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
   }
 

@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/grid';
 
 export async function initHowToPlaySwiper() {
-  const swiper = new Swiper('.how-to-play-swiper', {
+  const swiper = new Swiper('[data-swiper-how-to-play]', {
     modules: [Navigation, Keyboard, Grid],
 
     /*  slidesPerView: 1,
@@ -17,8 +17,8 @@ export async function initHowToPlaySwiper() {
     },
 */
     navigation: {
-      prevEl: '.how-to-play-pagination-prev',
-      nextEl: '.how-to-play-pagination-next',
+      prevEl: '[data-how-to-play-pagination-prev]',
+      nextEl: '[data-how-to-play-pagination-next]',
     },
 
     keyboard: { enabled: true },
@@ -56,8 +56,8 @@ export async function initHowToPlaySwiper() {
   });
 }
 function clickUpdateButtons(swiper) {
-  const prevBtn = document.querySelector('.how-to-play-pagination-prev');
-  const nextBtn = document.querySelector('.how-to-play-pagination-next');
+  const prevBtn = document.querySelector('[data-how-to-play-pagination-prev]');
+  const nextBtn = document.querySelector('[data-how-to-play-pagination-next]');
   prevBtn.disabled = swiper.isBeginning;
   nextBtn.disabled = swiper.isEnd;
 }
