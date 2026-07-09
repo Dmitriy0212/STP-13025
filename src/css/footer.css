@@ -32,4 +32,7 @@
   .footer-nav {
     gap: 43px;
   }
+  .footer-link {
+    font-size: 16px;
+  }
 }

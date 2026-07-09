@@ -48,19 +48,19 @@ const slidesData = [
   },
 ];
 export async function initSwiper() {
-  const sliderWrapper = document.querySelector('.slider__wrapper');
+  const sliderWrapper = document.querySelector('[data-gallery-swiper-wrapper]');
   if (!sliderWrapper) {
     console.error('sliderWrapper не знайдено!');
     return;
   }
 
   sliderWrapper.innerHTML = a(slidesData);
-  const images = document.querySelectorAll('.slider__image');
+  const images = document.querySelectorAll('[data-gallery-slider]');
 
   const swiper = new Swiper('.slider', {
     navigation: {
-      nextEl: '.gallery-pagination-next',
-      prevEl: '.gallery-pagination-prev',
+      nextEl: '[data-gallery-swiper-next]',
+      prevEl: '[data-gallery-swiper-prev]',
     },
     keyboard: true,
 
@@ -82,8 +82,8 @@ export async function initSwiper() {
 }
 
 function clickUpdateButtons(swiper) {
-  const prevBtn = document.querySelector('.gallery-pagination-prev');
-  const nextBtn = document.querySelector('.gallery-pagination-next');
+  const prevBtn = document.querySelector('[data-gallery-swiper-prev]');
+  const nextBtn = document.querySelector('[data-gallery-swiper-next]');
   prevBtn.disabled = swiper.isBeginning;
   nextBtn.disabled = swiper.isEnd;
 }
@@ -108,6 +108,7 @@ function a(slidesData) {
       />
 
       <img
+      data-gallery-slider
         class="slider__image"
         src="${slide.urldesc}"
         srcset="${slide.urldescx2} 2x"

@@ -92,7 +92,7 @@
   flex-shrink: 0;
   display: block;
 }
-.slider-nav-pag {
+.gallery-nav-pag {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -184,7 +184,7 @@
     font-size: 24px;
     line-height: 1.2;
   }
-  .slider-nav-pag {
+  .gallery-nav-pag {
     margin-top: 24px;
   }
 }

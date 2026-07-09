@@ -1,6 +1,6 @@
 .how-to-play {
-  padding: 0 16px;
   background: linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
+  scroll-margin-top: 100px;
 }
 
 .swiper-slide {
@@ -97,12 +97,16 @@
 }
 
 .slider-nav-pag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-direction: column;
   margin-bottom: 16px;
 }
 
 @media only screen and (min-width: 1440px) {
   .how-to-play {
-    padding: 0 20px;
     background: url('/img/webp/desc/image 8.svg') center/cover no-repeat,
       linear-gradient(269.86deg, #49cdfc 0.12%, #fba4cd 99.88%);
   }
