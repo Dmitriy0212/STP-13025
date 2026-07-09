@@ -57,7 +57,7 @@ export async function initSwiper() {
   sliderWrapper.innerHTML = a(slidesData);
   const images = document.querySelectorAll('[data-gallery-slider]');
 
-  const swiper = new Swiper('.slider', {
+  const swiper = new Swiper('[data-swiper]', {
     navigation: {
       nextEl: '[data-gallery-swiper-next]',
       prevEl: '[data-gallery-swiper-prev]',
