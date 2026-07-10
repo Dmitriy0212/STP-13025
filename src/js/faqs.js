@@ -1,4 +1,4 @@
-const faqItems = document.querySelectorAll('.faqs-item input');
+const faqItems = document.querySelectorAll('[data-faqs-item]');
 faqItems.forEach(input => {
   input.addEventListener('change', () => {
     if (input.checked) {
